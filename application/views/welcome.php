@@ -9,11 +9,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="<?php echo asset_url(); ?>/css/bootstrap.min.css">
 	<script type="text/javascript" src="<?php echo asset_url(); ?>/js/jquery-2.0.0.js"></script>
 	<script type="text/javascript" src="<?php echo asset_url(); ?>/js/search.js"></script>
-	<script type="text/javascript">
-		window.onload = function(e){ 
-			document.searchForm.action = "";
-		};
-	</script>
 </head>
 <body>
 
