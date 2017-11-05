@@ -1,12 +1,10 @@
 #container{
-	width:960px;
-	margin:50px auto
+	margin:0 auto;
 }
 
 form{
-	padding:10px 20px 10px 0;
-	font-family:Arial;
-	float:left;
+	padding: 20px;
+    font-family: Arial;
 }
 
 form h1 {
@@ -16,8 +14,10 @@ form h1 {
     padding: 20px;
 }
 
-form input {
-	margin-right: 10px;
+form input[type="search"] {
+	width: 25%;
+	border: 1px solid #ccc;
+	padding: 8px;
 }
 
 .search-bar{

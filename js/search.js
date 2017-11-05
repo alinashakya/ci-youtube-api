@@ -20,10 +20,11 @@ $(document).on('ready',function(){
 });
 
 function getNextVideo(videoTitle,videoDesc,videoId){
-	alert(videoTitle);
-	alert(videoDesc);
-	alert(videoId);
-	$("#youtube-title").html(videoTitle);
-	$("#youtube-desc").html(videoDesc);
-	$("#youtube-url").attr('src','https://www.youtube.com/embed/'+videoId);
+	$("#youtube-title").html(urldecode(videoTitle));
+	$("#youtube-desc").html(urldecode(videoDesc));
+	$("#youtube-url").attr('src','https://www.youtube.com/embed/'+urldecode(videoId));
+}
+
+function urldecode(string) {
+  return decodeURIComponent(string.replace(/\+/g, ' '));
 }

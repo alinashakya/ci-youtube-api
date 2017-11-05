@@ -21,8 +21,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <?php 
 echo form_open('/',array('id' => 'search-form','name'=>'searchForm')); ?>
 <?php  
-echo form_input(array('id' => 'sname', 'name' => 'sname', 'type' => 'search', 'placeholder' => 'Youtube', 'class' => 'input-append'));
-echo form_submit(array('id' => 'search-form-submit', 'value' => 'Search', 'class' => 'btn'));
+echo form_input(array('id' => 'sname', 'name' => 'sname', 'type' => 'search', 'placeholder' => 'Youtube Search', 'class' => 'input-append'));
+echo form_submit(array('id' => 'search-form-submit', 'value' => 'Search', 'class' => 'btn btn-success'));
 echo form_close(); 
 ?>
 </div>

@@ -9,7 +9,7 @@
 </div>
 <ul class="col-md-4 list-group">
 		<?php foreach ($results as $key => $value) { ?>
-			<li onClick="getNextVideo('<?php echo $value['title'] ?>','<?php echo $value['description'] ?>','<?php echo $value['videoId'] ?>');return false;" class="list-group-item">
+			<li onClick="getNextVideo('<?php echo urlencode($value['title']); ?>','<?php echo urlencode($value['description']); ?>','<?php echo urlencode($value['videoId']); ?>');return false;" class="list-group-item">
 			<div class="video-list media">
 				<div class="media-left">
 					<img class="media-object" src="<?php echo $value['imageUrl']; ?>"/>
